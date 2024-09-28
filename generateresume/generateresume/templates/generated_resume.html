@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currículo de {{ full_name }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            border-bottom: 1px solid #ddd;
+        }
+        .info {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ full_name }}</h1>
+    <p>Email: {{ email }}</p>
+    <p>Telefone: {{ phone }}</p>
+    <p>Endereço: {{ address }}</p>
+
+    <div class="section">
+        <h3>Educação</h3>
+        <p class="info">{{ education }}</p>
+    </div>
+
+    <div class="section">
+        <h3>Experiência Profissional</h3>
+        <p class="info">{{ experience }}</p>
+    </div>
+
+    <div class="section">
+        <h3>Habilidades</h3>
+        <p class="info">{{ skills }}</p>
+    </div>
+
+    <button onclick="window.print()">Imprimir Currículo</button>
+</body>
+</html>

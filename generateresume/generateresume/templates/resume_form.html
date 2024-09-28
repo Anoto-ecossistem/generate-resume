@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Currículos</title>
+</head>
+<body>
+    <h2>Preencha suas informações para gerar o currículo</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Gerar Currículo</button>
+    </form>
+</body>
+</html>
