@@ -1,1 +1,1 @@
-# generate-template
+# generate-resume
