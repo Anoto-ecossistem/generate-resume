@@ -1,0 +1,1 @@
+web: gunicorn gegenerateresume/generateresume.wsgi --log-file -
