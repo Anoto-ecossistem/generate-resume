@@ -1,0 +1,59 @@
+# ignore all logs
+*.log
+
+# Ignorar arquivos de ambiente
+.env
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+__pycache__/
+*.so
+
+# Diretórios e arquivos de virtual environment
+env/
+venv/
+ENV/
+.venv/
+
+# Configurações específicas do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.sqlite3
+*.dat
+*.db
+*.sqlite
+*.sql
+*.pki/
+
+# Ignorar arquivos de bancos de dados locais
+db.sqlite3
+
+# Static e media files (caso você os gere localmente)
+staticfiles/
+media/
+
+# Ignorar migrações (se geradas automaticamente)
+*/migrations/*
+
+# Ignorar configurações de editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de cache
+*.swp
+*~
+
+# Ignorar arquivos de pacotes Node.js (caso utilize Node.js para algum front-end)
+node_modules/
+package-lock.json
+yarn.lock
