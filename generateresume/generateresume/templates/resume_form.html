@@ -3,14 +3,45 @@
 <head>
     <title>Gerador de Currículos</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+          background-color: #1a202c;
+          color: #e2e8f0;
+        }
+    
+        .form-container {
+          animation: fadeIn 0.5s ease forwards;
+        }
+    
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+    
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
 </head>
 <body>
-    <h2 class="text-3xl font-bold underline">Preencha suas informações para gerar o currículo</h2>
-    
-    <form class="text-3xl" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Gerar Currículo</button>
-    </form>
+
+    <div class="max-w-md mx-auto p-8 bg-gray-800 rounded-md shadow-md form-container">
+        <h2 class="text-2xl font-semibold text-white mb-6">Preencha suas informações para gerar o currículo</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <div class="pt-4">  
+                <button type="submit"
+                class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
+                Gerar currículo
+                </button>
+
+            </div>
+        </form>
+    </div>
 </body>
 </html>
