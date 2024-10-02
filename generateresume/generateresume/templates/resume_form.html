@@ -5,24 +5,22 @@
   <title>Gerador de Currículos</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Carrega a tag static do Django -->
+  {% load static %}
+
+  <!-- Link para o arquivo CSS -->
+  <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
   <meta charset="utf-8" />
-
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-
-
   <meta property="og:title" content="Homepage | Atlas Template" />
-
   <meta property="og:locale" content="en_US" />
 
   <link rel="canonical" href="https://atlas.tailwindmade.com/" />
-
   <meta property="og:url" content="https://atlas.tailwindmade.com/" />
-
   <meta name="description"
     content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 
   <meta property="og:site_name" content="Atlas Template" />
@@ -32,7 +30,6 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <meta name="twitter:site" content="@tailwindmade" />
-
 
   <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
 
@@ -44,13 +41,12 @@
 
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
-  <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+  <link crossorigin="anonymous" href="/generateresume/polls/static/polls/style.css" media="screen" rel="stylesheet" />
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css" />
-
   <script>
     hljs.initHighlightingOnLoad();
   </script>
@@ -88,7 +84,7 @@
       <div class="flex items-center justify-between py-6 lg:py-10">
         <a href="/" class="flex items-center">
           <span href="/" class="mr-2">
-            <img src="/assets/img/logo.svg" alt="logo" />
+            <img src="{% static 'polls/img/logo.svg' %}" alt="logo" />
           </span>
           <p class="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block">
             John Doe
@@ -183,7 +179,7 @@
       <div class="container mx-auto">
         <div class="border-b border-grey-lighter py-16 lg:py-20">
           <div>
-            <img src="/assets/img/author.png" class="h-16 w-16" alt="author" />
+            <img src="{% static 'polls/img/author.png' %}" class="h-16 w-16" alt="author" />
           </div>
           <h1 class="pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
             Hi, I’m John Doe.
@@ -410,6 +406,9 @@
     </div>
 
   </div>
+
+  
+  <script src="/generateresume/generateresume/static/polls/main.js"></script>
 </body>
 
 </html>
