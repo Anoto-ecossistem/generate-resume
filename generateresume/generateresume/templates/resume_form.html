@@ -81,9 +81,9 @@
   <div id="main">
     <div name="logo" class="container mx-auto">
       <div class="flex items-center justify-between py-6 lg:py-10">
-        <a href="/" class="flex items-center">
+        <a href="https://github.com/Anoto-ecossistem" target="_blank" class="flex items-center">
           <span href="/" class="mr-2">
-            <img class="rounded-full" src="{% static 'img/anoto.png' %}" alt="logo" width="100" height="100" />
+            <img class="rounded-md" src="{% static 'img/anoto.png' %}" alt="logo" width="100" height="100" />
           </span>
           <p class="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block">
             Generate-Resume
@@ -109,31 +109,31 @@
               <div
                 class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
               </div>
-              <a href="/"
-                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Intro</a>
+              <a href="#generate__resume"
+                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Generate</a>
             </li>
 
             <li class="group relative mr-6 mb-1">
               <div
                 class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
               </div>
-              <a href="/blog"
-                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Blog</a>
+              <a href="#jobs"
+                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">jobs</a>
             </li>
 
             <li class="group relative mr-6 mb-1">
               <div
                 class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
               </div>
-              <a href="/uses"
-                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Uses</a>
+              <a href="https://github.com/Anoto-ecossistem" target="_blank"
+                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">About</a>
             </li>
 
             <li class="group relative mr-6 mb-1">
               <div
                 class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
               </div>
-              <a href="/contact"
+              <a href="https://github.com/Anoto-ecossistem" target="_blank"
                 class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Contact</a>
             </li>
 
@@ -208,16 +208,16 @@
         </div>
 
 
-        <div class="py-16 lg:py-20">
+        <div id="jobs" class="py-16 lg:py-20">
           <div class="flex items-center pb-6">
-            <img src="/assets/img/icon-story.png" alt="icon story" />
+            <img src="{% static 'img/icon-story.png' %}" alt="icon story" />
             <h3 class="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
               Jobs
             </h3>
-            <a href="/blog"
+            <a href="/"
               class="flex items-center pl-10 font-body italic text-green transition-colors hover:text-secondary dark:text-green-light dark:hover:text-secondary">
-              All posts
-              <img src="/assets/img/long-arrow-right.png" class="ml-3" alt="arrow right" />
+              All jobs
+              <img src="{% static 'img/long-arrow-right.png' %}" class="ml-3" alt="arrow right" />
             </a>
           </div>
           <div class="pt-8">
@@ -278,14 +278,14 @@
 
         <div class="pb-16 lg:pb-20">
           <div class="flex items-center pb-6">
-            <img src="/assets/img/icon-project.png" alt="icon story" />
+            <img src="{% static 'img/icon-story.png' %}" alt="icon story" />
             <h3 class="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
               Other projects from Anoto
             </h3>
           </div>
           <div>
 
-            <a href=" / " class="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6">
+            <a href="https://github.com/Anoto-ecossistem" target="_blank" class="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6">
               <span class="w-9/10 pr-8">
                 <h4 class="font-body text-lg font-semibold text-primary dark:text-white">
                   Anoto list
@@ -295,7 +295,7 @@
                 </p>
               </span>
               <span class="w-1/10">
-                <img src="/assets/img/chevron-right.png" class="mx-auto" alt="chevron right" />
+                <img src="{% static 'img/chevron-right.png' %}"class="mx-auto" alt="chevron right" />
               </span>
             </a>
           </div>
@@ -306,8 +306,8 @@
     <div class="container mx-auto">
       <div class="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12">
         <div class="mr-auto flex flex-col items-center sm:flex-row">
-          <a href="/" class="mr-auto sm:mr-6">
-            <img src="/assets/img/anoto.png" alt="logo" />
+          <a href="https://github.com/Anoto-ecossistem" target="" class="mr-auto sm:mr-6">
+            <img class="rounded-md" src="{% static 'img/anoto.png' %}" width="100" height="100" alt="logo" />
           </a>
           <p class="pt-5 font-body font-light text-primary dark:text-white sm:pt-0">
             ©2024 Anoto.
