@@ -191,8 +191,8 @@
 
         <div id="generate__resume" class="max-w-md mx-auto p-8 mt-16 bg-gray-800 rounded-md shadow-md form-container">
               
-          <h2 class="text-2xl font-semibold text-white mb-6">Gerador de curriculo</h2>
-          <h2 class="text-2xl font-semibold text-white mb-6">Preencha suas informações para gerar o currículo</h2>
+          <h2 class="text-2xl font-semibold text-white mb-6">Resume Generator</h2>
+          <h2 class="text-2xl font-semibold text-white mb-6">Fill in your information to generate the resume</h2>
           <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
@@ -200,7 +200,7 @@
             <div class="pt-4">
               <button type="submit"
                 class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
-                Gerar currículo
+                Generate
               </button>
 
             </div>
