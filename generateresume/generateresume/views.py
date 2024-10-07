@@ -8,7 +8,6 @@ def generate_resume(request):
             # Obtenha os dados do formulário
             full_name = form.cleaned_data['full_name']
             email = form.cleaned_data['email']
-            phone = form.cleaned_data['phone']
             address = form.cleaned_data['address']
             education = form.cleaned_data['education']
             experience = form.cleaned_data['experience']
@@ -18,7 +17,6 @@ def generate_resume(request):
             context = {
                 'full_name': full_name,
                 'email': email,
-                'phone': phone,
                 'address': address,
                 'education': education,
                 'experience': experience,
