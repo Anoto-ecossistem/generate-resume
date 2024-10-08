@@ -2,11 +2,12 @@
 <html>
 
 <head>
-  <title>Gerador de Currículos</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-
   <!-- Carrega a tag static do Django -->
   {% load static %}
+
+  <link rel="shortcut icon" href="{% static 'img/anoto.png' %}" type="image/x-icon">
+  <title>Generate-Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Link para o arquivo CSS -->
   <link rel="stylesheet" href="{% static 'styles.css' %}">
@@ -278,7 +279,7 @@
 
         <div class="pb-16 lg:pb-20">
           <div class="flex items-center pb-6">
-            <img src="{% static 'img/icon-story.png' %}" alt="icon story" />
+            <img src="{% static 'img/icon-project.png' %}" alt="icon story" />
             <h3 class="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
               Other projects from Anoto
             </h3>
