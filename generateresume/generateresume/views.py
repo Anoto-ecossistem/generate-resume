@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .forms import ResumeForm
+import requests
+import json
 
 def generate_resume(request):
     if request.method == 'POST':
@@ -27,3 +29,25 @@ def generate_resume(request):
         form = ResumeForm()
     
     return render(request, 'resume_form.html', {'form': form})
+
+def get_job_listings(keywords, location):
+    host = 'jooble.org'
+    api_key = 'YOUR_API_KEY'
+    
+    url = f'https://{host}/api/{api_key}'
+    headers = {"Content-Type": "application/json"}
+    body = {
+        "keywords": keywords,
+        "location": location
+    }
+
+    # Fazer a requisição
+    response = requests.post(url, headers=headers, json=body)
+    
+    # Verificar se a resposta foi bem-sucedida
+    if response.status_code == 200:
+        jobs = response.json()
+        return jobs
+    else:
+        return None
+    
