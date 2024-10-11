@@ -49,5 +49,5 @@ def get_job_listings(keywords, location):
         jobs = response.json()
         return jobs
     else:
-        return None
+        return "erro na requisição"
     

@@ -21,4 +21,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.generate_resume, name='generate_resume'),
+    path('jobs/', views.get_job_listings, name='job_search'),
 ]
