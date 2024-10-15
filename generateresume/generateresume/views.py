@@ -37,8 +37,8 @@ def get_job_listings(keywords, location):
     url = f'https://{host}/api/{api_key}'
     headers = {"Content-Type": "application/json"}
     body = {
-        "keywords": keywords,
-        "location": location
+        "keywords": "web developer in USA",
+        "location": "USA" 
     }
 
     # Fazer a requisição

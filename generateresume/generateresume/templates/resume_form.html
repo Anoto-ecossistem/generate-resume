@@ -191,7 +191,7 @@
         </div>
 
         <div id="generate__resume" class="max-w-md mx-auto p-8 mt-16 bg-gray-800 rounded-md shadow-md form-container">
-              
+
           <h2 class="text-2xl font-semibold text-white mb-6">Resume Generator</h2>
           <h2 class="text-2xl font-semibold text-white mb-6">Fill in your information to generate the resume</h2>
           <form method="POST">
@@ -222,9 +222,11 @@
             </a>
           </div>
           <div class="pt-8">
+            {% include 'job_listing.html' %}
+
             <div class="border-b border-grey-lighter pb-8">
-              <span
-                class="mb-4 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green">category</span>
+              <span class="mb-4 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green">--web
+                developer in USA--</span>
               <a href="/post"
                 class="block font-body text-lg font-semibold text-primary transition-colors hover:text-green dark:text-white dark:hover:text-secondary">Quis
                 hendrerit dolor magna eget est lorem ipsum dolor sit</a>
@@ -239,12 +241,6 @@
               </div>
             </div>
             <div class="border-b border-grey-lighter pt-10 pb-8">
-              <div class="flex items-center">
-                <span
-                  class="mb-4 inline-block rounded-full bg-grey-light px-2 py-1 font-body text-sm text-blue-dark">category</span>
-                <span
-                  class="mb-4 ml-4 inline-block rounded-full bg-yellow-light px-2 py-1 font-body text-sm text-yellow-dark">category</span>
-              </div>
               <a href="/post"
                 class="block font-body text-lg font-semibold text-primary transition-colors hover:text-green dark:text-white dark:hover:text-secondary">Senectus
                 et netus et malesuada fames ac turpis egestas integer</a>
@@ -259,8 +255,6 @@
               </div>
             </div>
             <div class="border-b border-grey-lighter pt-10 pb-8">
-              <span
-                class="mb-4 inline-block rounded-full bg-blue-light px-2 py-1 font-body text-sm text-blue">category</span>
               <a href="/post"
                 class="block font-body text-lg font-semibold text-primary transition-colors hover:text-green dark:text-white dark:hover:text-secondary">Vulputate
                 ut pharetra sit amet aliquam id diam maecenas ultricies</a>
@@ -286,7 +280,8 @@
           </div>
           <div>
 
-            <a href="https://github.com/Anoto-ecossistem" target="_blank" class="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6">
+            <a href="https://github.com/Anoto-ecossistem" target="_blank"
+              class="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6">
               <span class="w-9/10 pr-8">
                 <h4 class="font-body text-lg font-semibold text-primary dark:text-white">
                   Anoto list
@@ -296,7 +291,7 @@
                 </p>
               </span>
               <span class="w-1/10">
-                <img src="{% static 'img/chevron-right.png' %}"class="mx-auto" alt="chevron right" />
+                <img src="{% static 'img/chevron-right.png' %}" class="mx-auto" alt="chevron right" />
               </span>
             </a>
           </div>
@@ -327,7 +322,7 @@
 
   </div>
 
-  
+
   <script src="{% static 'main.js' %}"></script>
 </body>
 
