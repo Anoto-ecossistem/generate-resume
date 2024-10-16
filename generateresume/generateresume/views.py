@@ -30,7 +30,7 @@ def generate_resume(request):
     
     return render(request, 'resume_form.html', {'form': form})
 
-def get_job_listings(keywords, location):
+def get_job_listings():
     host = 'jooble.org'
     api_key = 'YOUR_API_KEY'
     
@@ -41,13 +41,14 @@ def get_job_listings(keywords, location):
         "location": "USA" 
     }
 
-    # Fazer a requisição
     response = requests.post(url, headers=headers, json=body)
-    
-    # Verificar se a resposta foi bem-sucedida
+
     if response.status_code == 200:
         jobs = response.json()
         return jobs
     else:
         return "erro na requisição"
-    
+
+def job_listings(request):
+    jobs = get_job_listings()
+    return render(request, 'job_listings.html', {'jobs': jobs})
