@@ -8,17 +8,19 @@
 <body>
     <h1>Job Listings for Web Developers in USA</h1>
     <ul>
-        {% if jobs %}
+        {% if error %}
+            <p>{{ error }}</p>
+        {% else %}
+            <ul>
             {% for job in jobs %}
                 <li>
-                    <h2>{{ job.title }}</h2>
+                    <h3>{{ job.title }}</h3>
                     <p>{{ job.company }}</p>
                     <p>{{ job.location }}</p>
-                    <a href="{{ job.link }}" target="_blank">Apply Now</a>
+                    <p><a href="{{ job.link }}" target="_blank">Ver mais</a></p>
                 </li>
             {% endfor %}
-        {% else %}
-            <p>No job listings found.</p>
+            </ul>
         {% endif %}
     </ul>
 </body>
